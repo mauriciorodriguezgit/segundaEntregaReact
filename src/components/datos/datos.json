@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "nombre": "Dulce de chocolate",
+        "descripcion": "Delicioso dulce de chocolate relleno de crema.",
+        "categoria": "Chocolate",
+        "imagen_url": "https://i.postimg.cc/s2VfQQF6/Dulce-de-chocolate.jpg",
+        "precio": 2.99
+    },
+    {
+        "id": 2,
+        "nombre": "Gomitas de frutas",
+        "descripcion": "Gomitas de frutas variadas, perfectas para los amantes de lo dulce.",
+        "categoria": "Gomitas",
+        "imagen_url": "https://i.postimg.cc/t4gp90Fw/Gomitas-de-frutas.jpg",
+        "precio": 1.99
+    },
+    {
+        "id": 3,
+        "nombre": "Pastel de cumpleaños",
+        "descripcion": "Un pastel de cumpleaños clásico con crema y decoraciones.",
+        "categoria": "Pasteles",
+        "imagen_url": "https://i.postimg.cc/Dy13FvWx/Pastel-de-cumplea-os.jpg",
+        "precio": 19.99
+    },
+    {
+        "id": 4,
+        "nombre": "Chicles de menta",
+        "descripcion": "Chicles refrescantes de menta para mantener el aliento fresco.",
+        "categoria": "Chicles",
+        "imagen_url": "https://i.postimg.cc/MK0VhLSh/Chicles-de-menta.jpg",
+        "precio": 0.99
+    },
+    {
+        "id": 5,
+        "nombre": "Caramelos de miel",
+        "descripcion": "Caramelos de miel caseros, perfectos para endulzar tu día.",
+        "categoria": "Caramelos",
+        "imagen_url": "https://i.postimg.cc/Kj1fFDmd/Caramelos-de-miel.jpg",
+        "precio": 3.49
+    },
+    {
+        "id": 6,
+        "nombre": "Paleta de caramelo",
+        "descripcion": "Paleta de caramelo de colores variados, ideal para niños.",
+        "categoria": "Paletas",
+        "imagen_url": "https://i.postimg.cc/QMBnjDS6/Paleta-de-caramelo.jpg",
+        "precio": 1.29
+    },
+    {
+        "id": 7,
+        "nombre": "Chocolate blanco",
+        "descripcion": "Tableta de chocolate blanco suave y cremoso.",
+        "categoria": "Chocolate",
+        "imagen_url": "https://i.postimg.cc/VkzJyLs8/Chocolate-blanco.jpg",
+        "precio": 2.49
+    },
+    {
+        "id": 8,
+        "nombre": "Malvaviscos",
+        "descripcion": "Malvaviscos dulces y esponjosos para asar o disfrutar solos.",
+        "categoria": "Malvaviscos",
+        "imagen_url": "https://i.postimg.cc/WzR45sYx/Malvaviscos.jpg",
+        "precio": 1.79
+    },
+    {
+        "id": 9,
+        "nombre": "Mazapán",
+        "descripcion": "Dulce de mazapán con forma de frutas y sabores variados.",
+        "categoria": "Mazapán",
+        "imagen_url": "https://i.postimg.cc/2SH8PQXQ/Mazap-n.jpg",
+        "precio": 2.19
+    },
+    {
+        "id": 10,
+        "nombre": "Chocolates surtidos",
+        "descripcion": "Una selección de chocolates surtidos de alta calidad.",
+        "categoria": "Chocolate",
+        "imagen_url": "https://i.postimg.cc/0NF5N8vr/Chocolates-surtidos.jpg",
+        "precio": 5.99
+    }
+]
