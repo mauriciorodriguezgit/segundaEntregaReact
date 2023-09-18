@@ -1,39 +1,39 @@
 import React from 'react'
 import CartWidget from './CartWidget'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router-dom';
 
 
 const NavBar = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
-                <div className="p-3 mb-2 bg-success-subtle text-emphasis-success container-fluid">
-                    <a className=" m-3 col  navbar-brand" href="#">Candy Store</a>
-                    <button className=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul className="navbar-nav">
 
-                            <li className=" m-3 nav-item dropdown">
-                                <a className=" col btn btn-secondary nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Categorias
-                                </a>
-                                <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="#">action1</a></li>
-                                    <li><a className="dropdown-item" href="#">action2</a></li>
-                                    <li><a className="dropdown-item" href="#">action3</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className='col-2'>
+
+            <Navbar expand="lg" className="bg-body-tertiary ">
+                <Container className="p-3 mb-2 " fluid>
+                    < Navbar.Brand className=" m-3 col"> <Link to="/"><h1>Candy Store</h1></Link></Navbar.Brand>
+                    <Navbar.Toggle aria-controls="navbarScroll" />
+                    <Navbar.Collapse id="navbarScroll">
+                        <Nav className=" me-auto my-2 my-lg-0"
+                            style={{ maxHeight: '100px' }}
+                            navbarScroll>
+                            <NavDropdown className="m-3" title="Categoria" id="navbarScrollingDropdown">
+                                <NavDropdown.Item as={Link} to="/productos/Chocolate">Chocolate</NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item as={Link} to="/productos/Chicles">Chicles</NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item as={Link} to="/productos/Caramelos">Caramelos</NavDropdown.Item>
+                            </NavDropdown>
+                        </Nav>
+
                         <CartWidget />
-                    </div>
-                </div>
-            </nav>
 
-
-
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
 
 
 

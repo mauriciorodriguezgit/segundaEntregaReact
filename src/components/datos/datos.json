@@ -11,7 +11,7 @@
         "id": 2,
         "nombre": "Gomitas de frutas",
         "descripcion": "Gomitas de frutas variadas, perfectas para los amantes de lo dulce.",
-        "categoria": "Gomitas",
+        "categoria": "Chicles",
         "imagen_url": "https://i.postimg.cc/t4gp90Fw/Gomitas-de-frutas.jpg",
         "precio": 1.99
     },
@@ -43,7 +43,7 @@
         "id": 6,
         "nombre": "Paleta de caramelo",
         "descripcion": "Paleta de caramelo de colores variados, ideal para niños.",
-        "categoria": "Paletas",
+        "categoria": "Caramelos",
         "imagen_url": "https://i.postimg.cc/QMBnjDS6/Paleta-de-caramelo.jpg",
         "precio": 1.29
     },
@@ -59,7 +59,7 @@
         "id": 8,
         "nombre": "Malvaviscos",
         "descripcion": "Malvaviscos dulces y esponjosos para asar o disfrutar solos.",
-        "categoria": "Malvaviscos",
+        "categoria": "Pasteles",
         "imagen_url": "https://i.postimg.cc/WzR45sYx/Malvaviscos.jpg",
         "precio": 1.79
     },
@@ -67,7 +67,7 @@
         "id": 9,
         "nombre": "Mazapán",
         "descripcion": "Dulce de mazapán con forma de frutas y sabores variados.",
-        "categoria": "Mazapán",
+        "categoria": "Pasteles",
         "imagen_url": "https://i.postimg.cc/2SH8PQXQ/Mazap-n.jpg",
         "precio": 2.19
     },

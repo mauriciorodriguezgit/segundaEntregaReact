@@ -1,24 +1,33 @@
 import React from 'react'
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
+
+import { Link } from 'react-router-dom';
 
 const Item = ({ producto }) => {
     return (
         <>
 
-            <div className="  card mb-3  " style={{ width: '18rem' }} >
-                < img src={producto.imagen_url} className="card-img-top" alt="..." />
-                <div className="card-body">
-                    <h5 className="card-title">{producto.nombre}</h5>
-                    {/* <p className="card-text">Descripcion: {producto.descripcion}</p> */}
-                </div>
-                <ul className="list-group list-group-flush">
-                    <li className="list-group-item">Precio$:{producto.precio}</li>
-                    <li className="list-group-item">Categoria: {producto.categoria}</li>
-                    <a href={`/Item/${producto.id}`} className="btn btn-primary">Detalle</a>
-                </ul>
+        
+            <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={producto.imagen_url} />
+                <Card.Body>
+                    <Card.Title>{producto.nombre}</Card.Title>
+                    {/* <Card.Text>
+                        Descripcion: {producto.descripcion}
+                    </Card.Text> */}
+                </Card.Body>
+                <ListGroup className="list-group-flush">
+                    <ListGroup.Item>Precio$:{producto.precio}</ListGroup.Item>
+                    <ListGroup.Item>Categoria: {producto.categoria}</ListGroup.Item>
 
-            </div>
+                </ListGroup>
+                <Card.Body>
+                    
+                    <Link to={`/item/${producto.id}`}className="btn btn-primary">detalle</Link>
 
-
+                </Card.Body>
+            </Card>
 
 
         </>
