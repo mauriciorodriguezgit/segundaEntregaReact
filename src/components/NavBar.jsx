@@ -14,12 +14,14 @@ const NavBar = () => {
 
             <Navbar expand="lg" className="bg-body-tertiary ">
                 <Container className="p-3 mb-2 " fluid>
-                    < Navbar.Brand className=" m-3 col"> <Link to="/"><h1>Candy Store</h1></Link></Navbar.Brand>
+                    < Navbar.Brand className=" m-3 "> <Link to="/"><h1>Candy Store</h1></Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className=" me-auto my-2 my-lg-0"
                             style={{ maxHeight: '100px' }}
                             navbarScroll>
+                            <Nav.Link className="m-3" as={Link} to="/Contact">contacto</Nav.Link>
+
                             <NavDropdown className="m-3" title="Categoria" id="navbarScrollingDropdown">
                                 <NavDropdown.Item as={Link} to="/productos/Chocolate">Chocolate</NavDropdown.Item>
                                 <NavDropdown.Divider />
