@@ -1,7 +1,9 @@
-import React, { useState, useEffect,} from 'react'
-import { pedirItemId } from './ayuda/pedidoDeDatos'
+import React, { useState, useEffect, } from 'react'
+
 import ItemDetail from './ItemDetail'
 import { useParams } from 'react-router-dom';
+import { doc, getDoc } from "firebase/firestore"
+import { datab } from '../config';
 
 
 
@@ -9,12 +11,18 @@ const ItemDetailContainer = () => {
 
     const [item, setitem] = useState(null);
     const id = useParams().id;
-    
+
 
     useEffect(() => {
-        pedirItemId(Number(id))
-            .then((res)=>{
-                setitem(res);
+
+        const docRef = doc(datab, "productos", id)
+        getDoc(docRef)
+            .then((resp) => {
+                setitem(
+                    {...resp.data(), id: resp.id
+                })
+
+
             })
 
     }, [id])
@@ -22,7 +30,7 @@ const ItemDetailContainer = () => {
 
     return (
         <div>
-            {item &&<ItemDetail item ={item}/>}
+            {item && <ItemDetail item={item} />}
         </div>
     )
 }

@@ -4,6 +4,8 @@ import Button from 'react-bootstrap/Button';
 
 const ItemCount = () => {
     const [cantidad, setcantidad] = useState(0)
+    const [ocultar, setOcultar] = useState(false)
+
     const incremental = () => {
         if (cantidad < 10) {
             setcantidad(cantidad + 1)
@@ -18,19 +20,22 @@ const ItemCount = () => {
         }
     }
 
-const onAdd = () => {
-    alert(`agregado al carrito!${cantidad}unidades`)
-
-}
+    const onAdd = () => {
+        alert(`agregado al carrito!${cantidad}unidades`)
+        setOcultar (true)
+    }
     return (
-        <div>
+        <div>{!ocultar && (<>
+
+
 
             <Button variant="primary" onClick={incremental}>+</Button>{' '}
             <Button variant="primary" onClick={decreciente}>-</Button>{' '}
             <Button variant="primary" onClick={onAdd}>agregar</Button>{' '}
+
             <p>{cantidad}</p>
-
-
+        </>
+        )}
         </div>
     )
 }
